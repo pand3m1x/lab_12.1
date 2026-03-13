@@ -16,7 +16,7 @@ How would you add a third page (e.g., a menu page) to this server? What steps wo
 
     console.log(_dirname);
 
-    app.use(express.static(path.join(_dirname, "menu")));
+    app.use(express.static(path.join(_dirname, "public")));
 
     app.get("/menu", (req, res) => {
       res.sendFile(path.join(_dirname, "public/menu.html"));
